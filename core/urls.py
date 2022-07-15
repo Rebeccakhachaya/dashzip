@@ -10,8 +10,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),          # Django admin route
     path("", include("apps.authentication.urls")), # Auth routes - login / register
     path("", include("apps.home.urls")), 
-    path("", include("apps.get_order.urls")), 
-    path("", include("apps.cart.urls")),  
+   
+    
     # path("", include("apps.cal.urls")),
 
  

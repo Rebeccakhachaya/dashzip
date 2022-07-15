@@ -8,10 +8,9 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
 from django.urls import reverse
-# from authentication.views import *
 
 
-@login_required(login_url="/login/")
+@login_required(login_url="/register/")
 def index(request):
     context = {'segment': 'index'}
 
@@ -19,14 +18,14 @@ def index(request):
     return HttpResponse(html_template.render(context, request))
 
 
-@login_required(login_url="/login/")
+@login_required(login_url="/register/")
 def pages(request):
     context = {}
     # All resource paths end in .html.
     # Pick out the html file name from the url. And load that template.
     try:
 
-        load_template = request.path.split('login')[-1]
+        load_template = request.path.split('register')[-1]
 
         if load_template == 'admin':
             return HttpResponseRedirect(reverse('admin:index'))
