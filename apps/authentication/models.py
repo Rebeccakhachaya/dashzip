@@ -1,0 +1,14 @@
+# -*- encoding: utf-8 -*-
+"""
+Copyright (c) 2019 - present AppSeed.us
+"""
+
+# from pyexpat import model
+from django.db import models
+
+
+# class Person(models.Model):
+#      username=models.CharField(max_length=100)
+#      password=models.CharField(max_length=100)
+
+# # Create your models here.

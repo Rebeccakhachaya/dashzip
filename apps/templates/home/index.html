@@ -1,0 +1,1543 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock title %}
+
+<!-- Specific CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="row gap-20 masonry pos-r">
+      <div class="masonry-sizer col-md-6"></div>
+      <div class="masonry-item w-100">
+        <div class="row gap-20">
+          <!-- #Toatl Visits ==================== -->
+          <div class="col-md-3">
+            
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Total Visits</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">+10%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- #Total Page Views ==================== -->
+          <div class="col-md-3">
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Total Page Views</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash2"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-red-50 c-red-500">-7%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- #Unique Visitors ==================== -->
+          <div class="col-md-3">
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Unique Visitor</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash3"></span>
+                  </div>
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-purple-50 c-purple-500">12%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- #Bounce Rate ==================== -->
+          <div class="col-md-3"> 
+            <div class="layers bd bgc-white p-20">
+              <div class="layer w-100 mB-10">
+                <h6 class="lh-1">Bounce Rate</h6>
+              </div>
+              <div class="layer w-100">
+                <div class="peers ai-sb fxw-nw">
+                  <div class="peer peer-greed">
+                    <span id="sparklinedash4"></span>
+                  </div> 
+                  <div class="peer">
+                    <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-blue-50 c-blue-500">33%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masonry-item col-12">
+        <!-- #Site Visits ==================== -->
+        <div class="bd bgc-white">
+          <div class="peers fxw-nw@lg+ ai-s">
+            <div class="peer peer-greed w-70p@lg+ w-100@lg- p-20">
+              <div class="layers">
+                <div class="layer w-100 mB-10">
+                  <h6 class="lh-1">Site Visits</h6>
+                </div>
+                <div class="layer w-100">
+                  <div id="world-map-marker"></div>
+                </div>
+              </div>
+            </div>
+            <div class="peer bdL p-20 w-30p@lg+ w-100p@lg-">
+              <div class="layers">
+                <div class="layer w-100">
+                  <!-- Progress Bars -->
+                  <div class="layers">
+                    <div class="layer w-100">
+                      <h5 class="mB-5">100k</h5>
+                      <small class="fw-600 c-grey-700">Visitors From USA</small>
+                      <span class="pull-right c-grey-600 fsz-sm">50%</span>
+                      <div class="progress mT-10">
+                        <div class="progress-bar bgc-deep-purple-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">50% Complete</span></div>
+                      </div>
+                    </div>
+                     <div class="layer w-100 mT-15">
+                      <h5 class="mB-5">1M</h5>
+                      <small class="fw-600 c-grey-700">Visitors From Europe</small>
+                      <span class="pull-right c-grey-600 fsz-sm">80%</span>
+                      <div class="progress mT-10"> -->
+                        <div class="progress-bar bgc-green-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%;"> <span class="sr-only">80% Complete</span></div>
+                      </div>
+                    </div>
+                    <div class="layer w-100 mT-15">
+                      <h5 class="mB-5">450k</h5>
+                      <small class="fw-600 c-grey-700">Visitors From Australia</small>
+                      <span class="pull-right c-grey-600 fsz-sm">40%</span>
+                      <div class="progress mT-10">
+                        <div class="progress-bar bgc-light-blue-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%;"> <span class="sr-only">40% Complete</span></div> -->
+                      </div>
+                    </div>
+                    <div class="layer w-100 mT-15">
+                      <h5 class="mB-5">1B</h5>
+                      <small class="fw-600 c-grey-700">Visitors From India</small>
+                      <span class="pull-right c-grey-600 fsz-sm">90%</span>
+                      <div class="progress mT-10">
+                        <div class="progress-bar bgc-blue-grey-500" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:90%;"> <span class="sr-only">90% Complete</span></div>
+                      </div>
+                    </div> 
+                  </div>
+
+                  <!-- Pie Charts -->
+                   <div class="peers pT-20 mT-20 bdT fxw-nw@lg+ jc-sb ta-c gap-10">
+                    <div class="peer">
+                      <div class="easy-pie-chart" data-size="80" data-percent="75" data-bar-color="#f44336">
+                        <span></span>
+                      </div>
+                      <h6 class="fsz-sm">New Users</h6>
+                    </div>
+                    <div class="peer">
+                      <div class="easy-pie-chart" data-size="80" data-percent="50" data-bar-color="#2196f3">
+                        <span></span>
+                      </div>
+                      <h6 class="fsz-sm">New Purchases</h6>
+                    </div>
+                    <div class="peer">
+                      <div class="easy-pie-chart" data-size="80" data-percent="90" data-bar-color="#ff9800">
+                        <span></span>
+                      </div>
+                      <h6 class="fsz-sm">Bounce Rate</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masonry-item col-md-6">
+        <!-- #Monthly Stats ==================== -->
+        <div class="bd bgc-white">
+          <div class="layers">
+            <div class="layer w-100 pX-20 pT-20">
+              <h6 class="lh-1">Monthly Stats</h6>
+            </div>
+            <div class="layer w-100 p-20">
+              <canvas id="line-chart" height="220"></canvas>
+            </div>
+            <div class="layer bdT p-20 w-100">
+              <div class="peers ai-c jc-c gapX-20">
+                <div class="peer">
+                  <span class="fsz-def fw-600 mR-10 c-grey-800">10% <i class="fa fa-level-up c-green-500"></i></span>
+                  <small class="c-grey-500 fw-600">APPL</small>
+                </div>
+                <div class="peer fw-600">
+                  <span class="fsz-def fw-600 mR-10 c-grey-800">2% <i class="fa fa-level-down c-red-500"></i></span>
+                  <small class="c-grey-500 fw-600">Average</small>
+                </div>
+                <div class="peer fw-600">
+                  <span class="fsz-def fw-600 mR-10 c-grey-800">15% <i class="fa fa-level-up c-green-500"></i></span>
+                  <small class="c-grey-500 fw-600">Sales</small>
+                </div>
+                <div class="peer fw-600">
+                  <span class="fsz-def fw-600 mR-10 c-grey-800">8% <i class="fa fa-level-down c-red-500"></i></span>
+                  <small class="c-grey-500 fw-600">Profit</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masonry-item col-md-6">
+        <!-- #Todo ==================== -->
+        <div class="bd bgc-white p-20">
+          <div class="layers">
+            <div class="layer w-100 mB-10">
+              <h6 class="lh-1">Todo List</h6>
+            </div>
+             <div class="layer w-100">
+              <ul class="list-task list-group" data-role="tasklist">
+                <li class="list-group-item bdw-0" data-role="task">
+                  <div class="checkbox checkbox-circle checkbox-info peers ai-c">
+                    <input type="checkbox" id="inputCall1" name="inputCheckboxesCall" class="peer">
+                    <label for="inputCall1" class="peers peer-greed js-sb ai-c">
+                      <span class="peer peer-greed">Call John for Dinner</span> 
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item bdw-0" data-role="task">
+                  <div class="checkbox checkbox-circle checkbox-info peers ai-c">
+                    <input type="checkbox" id="inputCall2" name="inputCheckboxesCall" class="peer">
+                    <label for="inputCall2" class="peers peer-greed js-sb ai-c">
+                      <span class="peer peer-greed">Book Boss Flight</span>
+                      <span class="peer">
+                        <span class="badge badge-pill fl-r badge-success lh-0 p-10">2 Days</span>
+                      </span>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item bdw-0" data-role="task">
+                  <div class="checkbox checkbox-circle checkbox-info peers ai-c">
+                    <input type="checkbox" id="inputCall3" name="inputCheckboxesCall" class="peer">
+                    <label for="inputCall3" class="peers peer-greed js-sb ai-c">
+                      <span class="peer peer-greed">Hit the Gym</span>
+                      <span class="peer">
+                        <span class="badge badge-pill fl-r badge-danger lh-0 p-10">3 Minutes</span>
+                      </span>
+                    </label> -->
+                   </div>
+                </li>
+                <li class="list-group-item bdw-0" data-role="task">
+                  <div class="checkbox checkbox-circle checkbox-info peers ai-c">
+                    <input type="checkbox" id="inputCall4" name="inputCheckboxesCall" class="peer">
+                    <label for="inputCall4" class="peers peer-greed js-sb ai-c">
+                      <span class="peer peer-greed">Give Purchase Report</span>
+                      <span class="peer">
+                        <span class="badge badge-pill fl-r badge-warning lh-0 p-10">not important</span>
+                      </span>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item bdw-0" data-role="task">
+                  <div class="checkbox checkbox-circle checkbox-info peers ai-c">
+                    <input type="checkbox" id="inputCall5" name="inputCheckboxesCall" class="peer">
+                    <label for="inputCall5" class="peers peer-greed js-sb ai-c">
+                      <span class="peer peer-greed">Watch Game of Thrones Episode</span>
+                      <span class="peer">
+                        <span class="badge badge-pill fl-r badge-info lh-0 p-10">Tomorrow</span>
+                      </span>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item bdw-0" data-role="task">
+                  <div class="checkbox checkbox-circle checkbox-info peers ai-c">
+                    <input type="checkbox" id="inputCall6" name="inputCheckboxesCall" class="peer">
+                    <label for="inputCall6" class="peers peer-greed js-sb ai-c">
+                      <span class="peer peer-greed">Give Purchase report</span>
+                      <span class="peer">
+                        <span class="badge badge-pill fl-r badge-success lh-0 p-10">Done</span>
+                      </span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masonry-item col-md-6">
+        <!-- #Sales Report ==================== -->
+        <!-- <div class="bd bgc-white">
+          <div class="layers">
+            <div class="layer w-100 p-20">
+              <h6 class="lh-1">Sales Report</h6>
+            </div>
+            <div class="layer w-100">
+              <div class="bgc-light-blue-500 c-white p-20">
+                <div class="peers ai-c jc-sb gap-40">
+                  <div class="peer peer-greed">
+                    <h5>November 2017</h5>
+                    <p class="mB-0">Sales Report</p>
+                  </div>
+                  <div class="peer">
+                    <h3 class="text-right">$6,000</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="table-responsive p-20">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th class="bdwT-0">Name</th>
+                      <th class="bdwT-0">Status</th>
+                      <th class="bdwT-0">Date</th>
+                      <th class="bdwT-0">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="fw-600">Item #1 Name</td>
+                      <td><span class="badge bgc-red-50 c-red-700 p-10 lh-0 tt-c badge-pill">Unavailable</span> </td>
+                      <td>Nov 18</td>
+                      <td><span class="text-success">$12</span></td>
+                    </tr>
+                    <tr>  -->
+                      <!-- <td class="fw-600">Item #2 Name</td>
+                      <td><span class="badge bgc-deep-purple-50 c-deep-purple-700 p-10 lh-0 tt-c badge-pill">New</span></td>
+                      <td>Nov 19</td>
+                      <td><span class="text-info">$34</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-600">Item #3 Name</td>
+                      <td><span class="badge bgc-pink-50 c-pink-700 p-10 lh-0 tt-c badge-pill">New</span></td>
+                      <td>Nov 20</td>
+                      <td><span class="text-danger">-$45</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-600">Item #4 Name</td>
+                      <td><span class="badge bgc-green-50 c-green-700 p-10 lh-0 tt-c badge-pill">Unavailable</span></td>
+                      <td>Nov 21</td>
+                      <td><span class="text-success">$65</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-600">Item #5 Name</td>
+                      <td><span class="badge bgc-red-50 c-red-700 p-10 lh-0 tt-c badge-pill">Used</span></td>
+                      <td>Nov 22</td>
+                      <td><span class="text-success">$78</span></td>
+                    </tr>
+                    <tr>
+                      <td class="fw-600">Item #6 Name</td>
+                      <td><span class="badge bgc-orange-50 c-orange-700 p-10 lh-0 tt-c badge-pill">Used</span> </td>
+                      <td>Nov 23</td>
+                      <td><span class="text-danger">-$88</span></td>
+                    </tr> -->
+                    <!-- <tr>
+                      <td class="fw-600">Item #7 Name</td>
+                      <td><span class="badge bgc-yellow-50 c-yellow-700 p-10 lh-0 tt-c badge-pill">Old</span></td>
+                      <td>Nov 22</td>
+                      <td><span class="text-success">$56</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+            </div>
+          </div>
+          <div class="ta-c bdT w-100 p-20">
+            <a href="#">Check all the sales</a> -->
+          <!-- </div>
+        </div>
+      </div>
+      <div class="masonry-item col-md-6">
+        <!-- #Weather ==================== -->
+        <!-- <div class="bd bgc-white p-20"> -->
+          <!-- <div class="layers"> -->
+            <!-- Widget Title -->
+            <!-- <div class="layer w-100 mB-20"> -->
+              <!-- <h6 class="lh-1">Weather</h6> -->
+            <!-- </div> -->
+
+            <!-- Today Weather -->
+            <!-- <div class="layer w-100">
+              <div class="peers ai-c jc-sb fxw-nw">
+                <div class="peer peer-greed">
+                  <div class="layers">
+                    Temprature -->
+                    <!-- <div class="layer w-100">
+                      <div class="peers fxw-nw ai-c">
+                        <div class="peer mR-20">
+                          <h3>32<sup>°F</sup></h3>
+                        </div>
+                        <div class="peer">
+                          <canvas class="sleet" width="44" height="44"></canvas>
+                        </div>
+                      </div>
+                    </div>  --> 
+
+                    <!-- Condition -->
+                    <!-- <div class="layer w-100">
+                      <span class="fw-600 c-grey-600">Partly Clouds</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="peer">
+                  <div class="layers ai-fe">
+                    <div class="layer">
+                      <h5 class="mB-5">Monday</h5>
+                    </div>
+                    <div class="layer">
+                      <span class="fw-600 c-grey-600">Nov, 01 2017</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Today Weather Extended -->
+            <!-- <div class="layer w-100 mY-30">
+              <div class="layers bdB">
+                <div class="layer w-100 bdT pY-5">
+                  <div class="peers ai-c jc-sb fxw-nw">
+                    <div class="peer">
+                      <span>Wind</span>
+                    </div>
+                    <div class="peer ta-r">
+                      <span class="fw-600 c-grey-800">10km/h</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="layer w-100 bdT pY-5">
+                  <div class="peers ai-c jc-sb fxw-nw">
+                    <div class="peer">
+                      <span>Sunrise</span>
+                    </div>
+                    <div class="peer ta-r">
+                      <span class="fw-600 c-grey-800">05:00 AM</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="layer w-100 bdT pY-5">
+                  <div class="peers ai-c jc-sb fxw-nw">
+                    <div class="peer">
+                      <span>Pressure</span>
+                    </div>
+                    <div class="peer ta-r">
+                      <span class="fw-600 c-grey-800">1B</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- Week Forecast -->
+            <!-- <div class="layer w-100">
+              <div class="peers peers-greed ai-fs ta-c">
+                <div class="peer">
+                  <h6 class="mB-10">MON</h6>
+                  <canvas class="sleet" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">32<sup>°F</sup></span>
+                </div>
+                <div class="peer">
+                  <h6 class="mB-10">TUE</h6>
+                  <canvas class="clear-day" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">30<sup>°F</sup></span>
+                </div>
+                <div class="peer">
+                  <h6 class="mB-10">WED</h6>
+                  <canvas class="partly-cloudy-day" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">28<sup>°F</sup></span> -->
+                <!-- </div>
+                <div class="peer">
+                  <h6 class="mB-10">THR</h6>
+                  <canvas class="cloudy" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">32<sup>°F</sup></span>
+                </div>
+                <div class="peer">
+                  <h6 class="mB-10">FRI</h6>
+                  <canvas class="snow" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">24<sup>°F</sup></span>
+                </div>
+                <div class="peer">
+                  <h6 class="mB-10">SAT</h6>
+                  <canvas class="wind" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">28<sup>°F</sup></span>
+                </div>
+                <div class="peer">
+                  <h6 class="mB-10">SUN</h6>
+                  <canvas class="sleet" width="30" height="30"></canvas>
+                  <span class="d-b fw-600">32<sup>°F</sup></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="masonry-item col-md-6">
+        <!-- #Chat ==================== -->
+        <!-- <div class="bd bgc-white">
+          <div class="layers">
+            <div class="layer w-100 p-20">
+              <h6 class="lh-1">Quick Chat</h6>
+            </div>
+            <div class="layer w-100"> -->
+              <!-- Chat Box -->
+              <!-- <div class="bgc-grey-200 p-20 gapY-15"> -->
+                <!-- Chat Conversation -->
+                <!-- <div class="peers fxw-nw">
+                  <div class="peer mR-20">
+                    <img class="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+                  </div>
+                  <div class="peer peer-greed">
+                    <div class="layers ai-fs gapY-5">
+                      <div class="layer">
+                        <div class="peers fxw-nw ai-c pY-3 pX-10 bgc-white bdrs-2 lh-3/2">
+                          <div class="peer mR-10">
+                            <small>10:00 AM</small>
+                          </div>
+                          <div class="peer-greed">
+                            <span>Lorem Ipsum is simply dummy text of</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layer">
+                        <div class="peers fxw-nw ai-c pY-3 pX-10 bgc-white bdrs-2 lh-3/2">
+                          <div class="peer mR-10"> -->
+                            <!-- <small>10:00 AM</small>
+                          </div>
+                          <div class="peer-greed">
+                            <span>the printing and typesetting industry.</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layer">
+                        <div class="peers fxw-nw ai-c pY-3 pX-10 bgc-white bdrs-2 lh-3/2">
+                          <div class="peer mR-10">
+                            <small>10:00 AM</small> 
+                          </div>
+                          <div class="peer-greed">
+                            <span>Lorem Ipsum has been the industry's</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Chat Conversation -->
+                <!-- <div class="peers fxw-nw ai-fe">
+                  <div class="peer ord-1 mL-20">
+                    <img class="w-2r bdrs-50p" src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+                  </div>
+                  <div class="peer peer-greed ord-0">
+                    <div class="layers ai-fe gapY-10">
+                      <div class="layer">
+                        <div class="peers fxw-nw ai-c pY-3 pX-10 bgc-white bdrs-2 lh-3/2">
+                          <div class="peer mL-10 ord-1">
+                            <small>10:00 AM</small>
+                          </div>
+                          <div class="peer-greed ord-0">
+                            <span>Heloo</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="layer">
+                        <div class="peers fxw-nw ai-c pY-3 pX-10 bgc-white bdrs-2 lh-3/2">
+                          <div class="peer mL-10 ord-1">
+                            <small>10:00 AM</small>
+                          </div>
+                          <div class="peer-greed ord-0">
+                            <span>??</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <!-- Chat Send -->
+              <!-- <div class="p-20 bdT bgc-white">
+                <div class="pos-r">
+                  <input type="text" class="form-control bdrs-10em m-0" placeholder="Say something...">
+                  <button type="button" class="btn btn-primary bdrs-50p w-2r p-0 h-2r pos-a r-1 t-1">
+                    <i class="fa fa-paper-plane-o"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> --> 
+            
+<!-- {% endblock content %} -->
+
+<!-- Specific Page JS goes HERE  -->
+<!-- {% block javascripts %}{% endblock javascripts %} -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Energy</title>
+</head>
+<body>
+     <div id="navbar">
+        <h1>Admin portal</h1>
+        
+                <ul>
+                    <div class="card">
+                        < <div class="container"> -->
+<!-- 
+                            <li><a href=" {% url 'login' %}">Customers</a></li>  
+                            <li><a href=" {% url 'staff_list' %}">Staffs</a></li>  
+                            <li><a href=" {% url 'payments' %}">Payments</a></li>  
+ </div>
+                      </div>
+                    </div>
+                    <div class="container2"> -->
+
+                    <!-- <li><a href=""></a></li> -->
+               <!-- <button style="margin-left: 70%;font-size:36px;border-radius:8px;background-color: #7a67d1; 
+               text-align: center;margin-top:35%; "> <a href  =" {% url 'Dashboard' %}" style="text-decoration: none; color: black;">Dashboard</a></button>   -->
+               <!-- <button> <li><a href=" {% url 'login' %}">Login</a></li> </button>   -->
+
+  <!-- </ul>
+         </div>
+          </div>
+                   </div>
+                    
+    <style>
+    body{
+ /* background-image:url(https://cutewallpaper.org/24/cloud-computing-png/un-abanico-de-oportunidades-cloud-computing-free-transparent-png-download-pngkey.png);  */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(106, 106, 233);
+    opacity: 6.5;
+    /* background-color: rgb(72, 87, 218); */
+  
+     }
+    ul{
+        font-size: 24px;
+        color: rgb(10, 9, 9);
+        list-style-type: none; /* Remove bullets */
+
+       
+    }
+    ul li a{
+        text-decoration: none;
+        color: rgb(8, 8, 8);
+        font-size: 24px;
+        
+
+
+        
+    }
+    
+    
+ 
+     h1{
+         color: rgb(19, 18, 13);
+         text-align: center;
+     }
+
+
+     .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  height: 150px;
+  background-color: rgb(202, 202, 221);
+}
+
+       
+    
+    </style>
+</body>
+</html> --> 
+
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<body class="home">
+    <div class="container-fluid display-table">
+        <div class="row display-table-row">
+            <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                <div class="logo">
+                    <a hef="home.html"><img src="https://o.remove.bg/downloads/40dfae38-f66a-4ecc-9508-60b7844f242f/pearl_logo-removebg-preview.png" alt="merkery_logo" class="hidden-xs hidden-sm">
+                        <img src="http://jskrishna.com/work/merkury/images/circle-logo.png" alt="merkery_logo" class="visible-xs visible-sm circle-logo">
+                    </a>
+                </div>
+                <div class="navi">
+                    <ul>
+                        <li class="active"><a href="#"><i class="fa fa-line-chart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Dashboard</span></a></li>
+                        <li><a href="{% url 'user_list' %}"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Staffs</span></a></li>
+                        <li><a href="{% url 'orders' %}"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Orders</span></a></li>
+                        <li><a href="{% url 'login' %}"><i class='fa fa-money' aria-hidden="true"></i><span class="hidden-xs hidden-sm">Payments</span></a></li>
+                        <li><a href="{% url 'login' %}"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Calender</span></a></li>
+                        <li><a href="{% url 'login' %}"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">settings</span></a></li>
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                <!--<button type="button" class="slide-toggle">Slide Toggle</button> -->
+                <div class="row">
+                    <header>
+                        <div class="col-md-7">
+                            <nav class="navbar-default pull-left"></nav>
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="search hidden-xs hidden-sm">
+                            <input type="text" placeholder="Search" id="search">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="header-rightside">
+                            <ul class="list-inline header-top pull-right">
+                                <!-- <li class="hidden-xs"><a href="#" class="add-project" data-toggle="modal" data-target="#add_project">Add Project</a></li> -->
+                                <!-- <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> -->
+                                <!-- <li>
+                                    <a href="#" class="icon-info">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                        <span class="label label-primary">3</span>
+                                    </a>
+                                </li> -->
+                                <!-- <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://jskrishna.com/work/merkury/images/user-pic.jpg" alt="user">
+                                        <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="navbar-content">
+                                                <span>JS Krishna</span>
+                                                <p class="text-muted small">
+                                                    me@jskrishna.com
+                                                </p>
+                                                <div class="divider">
+                                                </div>
+                                                <a href="#" class="view btn-sm active">View Profile</a> -->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="user-dashboard">
+                <!-- <h1 >Welcome to Fulusi Dashboard -->
+                <div class="row">
+                    <div class="col-md-5 col-sm-5 col-xs-12 gutter">
+
+                        <!-- <div class="sales">
+                            <h2>Your Sale</h2>
+
+                            <div class="btn-group">
+                                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>Period:</span> Last Year
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="#">2012</a>
+                                    <a href="#">2014</a>
+                                    <a href="#">2015</a>
+                                    <a href="#">2016</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-md-7 col-sm-7 col-xs-12 gutter">
+
+                        <!-- <div class="sales report">
+                            <h2>Report</h2>
+                                <div class="btn-group">
+                                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span>Period:</span>  Year
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a href="#">2020</a>
+                                        <a href="#">2021</a>
+                                        <a href="#">2022</a>
+                                        <a href="#">2023</a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    
+
+    
+
+<!-- Modal -->
+<div id="add_project" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header login-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <!-- <h4 class="modal-title">Add Project</h4>
+            </div>
+            <div class="modal-body">
+                        <input type="text" placeholder="Project Title" name="name">
+                        <input type="text" placeholder="Post of Post" name="mail">
+                        <input type="text" placeholder="Author" name="passsword">
+                        <textarea placeholder="Desicrption"></textarea>
+                </div> -->
+            <div class="modal-footer">
+                <button type="button" class="cancel" data-dismiss="modal">Close</button>
+                <button type="button" class="add-project" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- SYSTLE -->
+<style>
+
+a:focus,a:hover,a{
+    outline:none;
+    text-decoration: none;
+}
+li,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-top i {
+    font-size: 18px;
+}
+.bg-image {
+    background: url(../images/background-login.jpg) no-repeat 0 0 / cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+
+.login-header {
+    display: inline-block;
+    width: 100%;
+    background: #0e1a35;
+}
+.login-signup {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.login-logo img {
+    cursor: pointer;
+    max-width: 171px;
+    padding: 23px 15px 22px;
+    width: 100%;
+}
+
+.login-header .navbar-right {
+    margin-right: 0px;
+}
+
+.login-header .nav-tabs > li.active > a,
+.login-header .nav-tabs > li.active > a:focus,
+.login-header .nav-tabs > li.active > a:hover {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.login-header .nav-tabs > li > a {
+    border: medium none;
+    border-radius: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.login-header .nav-tabs {
+    border-bottom: none;
+}
+
+.login-header .nav-tabs > li {
+    margin-bottom: 0px;
+}
+
+.login-header .nav > li > a:focus,
+.login-header .nav > li > a:hover {
+    background: none;
+    text-decoration: none;
+}
+
+.login-header .nav-tabs > li.active {
+    border-bottom: 6px solid #5584ff;
+}
+.login-inner h1 {
+    color: #8492af;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-inner h1 span {
+    color: #5584ff;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.login-form input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: -moz-use-text-color -moz-use-text-color #d4d9e3;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-size: 13px;
+    font-weight: 300;
+    width: 100%;
+    color: #8492af;
+    padding: 15px 50px;
+    font-size: 17px;
+    max-width: 550px;
+}
+
+.login-form label {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.user input {
+    background: rgba(0, 0, 0, 0) url("../images/user.png") no-repeat scroll 7px 12px;
+}
+
+.pass input {
+    background: rgba(0, 0, 0, 0) url("../images/password.png") no-repeat scroll 7px 12px;
+}
+
+.mail input {
+    background: rgba(0, 0, 0, 0) url("../images/mail.png") no-repeat scroll 4px 12px;
+}
+
+.login-signup .tab-content {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    display: inline-block;
+    margin-top: -8px;
+    width: 100%;
+}
+
+.form-btn {
+    background: #5584ff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 100px;
+    color: #ffffff;
+    font-weight: 400;
+    max-width: 250px;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin: 40px 0;
+    box-shadow: 0 2px 8px #d2d2d2;
+    -moz-box-shadow: 0 2px 8px #d2d2d2;
+    -webkit-box-shadow: 0 2px 8px #d2d2d2;
+}
+
+.form-btn::before {
+    content: "";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 17px;
+    top: 9px;
+}
+
+.form-details {
+    padding: 35px 0;
+}
+
+.tab-content .tab-pane {
+    padding: 70px 0;
+}
+
+
+/*Login Signup Page*/
+
+
+/*Home Page*/
+
+.home {
+    background: #f6f7fa;
+}
+
+#navigation {
+    background: #0e1a35;
+}
+
+#navigation {
+    padding: 0;
+}
+
+.display-table {
+    display: table;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.display-table-row {
+    display: table-row;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    float: none;
+    height: 100%;
+}
+
+.v-align {
+    vertical-align: top;
+}
+.logo img {
+    max-width: 180px;
+    padding: 16px 0 17px;
+    width: 100%;
+}
+.header-top {
+    margin: 0;
+    padding-top: 2px;
+}
+
+.header-top img {
+    border-radius: 50%;
+    max-width: 48px !important;
+    width: 100%;
+}
+
+.add-project {
+    background: #5584ff none repeat scroll 0 0;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 27px 10px 45px;
+    position: relative;
+}
+
+.header-rightside .nav > li > a:focus,
+.header-rightside .nav > li > a:hover {
+    background: none;
+    text-decoration: none;
+}
+.add-project::before {
+    background: rgba(0, 0, 0, 0) url("../images/plus.png") no-repeat scroll 0 0;
+    content: "";
+    ;
+    height: 12px;
+    left: 17px;
+    position: absolute;
+    top: 12px;
+    width: 12px;
+}
+
+.add-project:hover {
+    color: #ffffff;
+}
+
+.header-top i {
+    color: #0e1a35;
+}
+
+.icon-info {
+    position: relative;
+}
+.navi i {
+    font-size: 20px;
+}
+.label.label-primary {
+    border-radius: 50%;
+    font-size: 9px;
+    left: 8px;
+    position: absolute;
+    top: -9px;
+}
+
+.icon-info .label {
+    border: 2px solid #ffffff;
+    font-weight: 500;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.header-top li {
+    display: inline-block;
+    text-align: center;
+}
+
+.header-top .dropdown-toggle {
+    color: #0e1a35;
+}
+
+.header-top .dropdown-menu {
+    border: medium none;
+    left: -85px;
+    padding: 17px;
+}
+.view {
+    background: #5584ff none repeat scroll 0 0;
+    border-radius: 100px;
+    color: #ffffff;
+    display: inline-block; font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+.navbar-content > span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.img-responsive {
+    width: 100%;
+}
+#navigation{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.search input {
+    border: none;
+    font-size: 15px;
+    padding: 15px 9px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0) url("../images/search.png") no-repeat scroll 99% 12px;
+    color: #8492af;
+}
+
+header {
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+    display: inline-block !important;
+    line-height: 23px;
+    padding: 15px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.logo {
+    text-align: center;
+}
+
+.navi a {
+    border-bottom: 1px solid #0d172e;
+    border-top: 1px solid #0d172e;
+    color: #ffffff;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 28px 20px;
+    text-decoration: none;
+}
+
+.navi i {
+    margin-right: 15px;
+    color: #5584ff;
+}
+
+.navi .active a {
+    background: #122143;
+    border-left: 5px solid #5584ff;
+    padding-left: 15px;
+}
+
+.navi a:hover {
+    background: #122143 none repeat scroll 0 0;
+    border-left: 5px solid #5584ff;
+    display: block;
+    padding-left: 15px;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+.navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0e1a35;
+}
+
+.circle-logo {
+    margin: 0 auto;
+    max-width: 30px !important;
+    text-align: center;
+}
+.hidden-xs{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.user-dashboard {
+    padding: 0 20px;
+    text-align: center;
+}
+.user-dashboard h1 {
+    color: #0e1a35;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+    padding: 21px 0;
+}
+.sales {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #d4d9e3;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+.sales button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #dadee7;
+    border-radius: 100px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding-right: 32px;
+    color: #0e1a35;
+}
+
+.sales button::before {
+    content: "";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+.sales  .btn-group {
+    float: right;
+}
+.sales h2 {
+    color: #8492af;
+    float: left;
+    font-size: 21px;
+    font-weight: 600;
+    margin: 0;
+    padding: 9px 0 0;
+}
+.btn.btn-secondary.btn-lg.dropdown-toggle > span {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.sales .dropdown-menu{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 8px;
+    width: 100%;
+    color: #0e1a35;
+}
+.sales .btn-group.open .dropdown-toggle, .btn.active, .btn:active{
+    box-shadow: none;
+}
+.sales .dropdown-menu > a {
+    color: #0e1a35;
+    display: inline-block;
+    font-weight: 800;
+    padding: 9px 0;
+    text-align: center;
+    width: 100%;
+}
+#my-cool-chart svg {
+    width: 100%;
+}
+.sales .dropdown-menu > a:hover{
+    color: #5584FF;   
+}
+.shield-buttons {
+    display: none;
+}
+.close, .close:focus, .close:hover {
+    color: #fff;;
+    opacity: 1;
+    text-shadow: none;
+}
+.modal-body input {
+    border: 1px solid #d4d9e3;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 5px 0;
+    padding: 14px 10px;
+    width: 100%;
+    color: #8492af;
+}
+.modal-body textarea {
+    border: 1px solid #d4d9e3;
+    font-size: 14px;
+    font-weight: 300;
+    height: 200px;
+    margin-top: 5px;
+    padding: 9px 10px;
+    width: 100%;
+    color: #8492af;
+}
+.modal-header.login-header h4 {
+    color: #ffffff;
+}
+.modal-footer .add-project {
+    background: #5584ff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px;
+    position: relative;
+}
+.modal-footer .add-project::before{display: none;}
+.modal-footer {
+    border: 0 none;
+    padding: 10px 15px 26px;
+    text-align: right;
+}
+.cancel {
+    background: #0E1A35     ;
+    border: medium none;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 30px;
+    position: relative;
+    
+}
+.modal{
+    top: 20%; 
+}
+.modal-header .close {   margin-top: 2px;
+}
+.search input:focus{
+    border-bottom: 1px solid #BDC4D4;
+    line-height:22px;
+    transition: 0.1s all;
+}
+.modal-header.login-header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+/*Main CSS*/
+
+
+
+
+
+
+@media only screen and (max-device-width: 767px) {
+    .login-logo img {
+        margin: 0 auto;
+    }
+    .login-details .nav-tabs > li {
+        text-align: center;
+        width: 50%;
+    }
+    .login-signup .login-inner h1 {
+        font-size: 26px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    .login-inner .login-form input {
+        font-size: 15px;
+        max-width: 100%;
+        padding: 15px 45px;
+    }
+    .login-inner .form-details {
+        padding: 25px;
+    }
+    .login-inner .login-form label {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .login-inner .form-btn {
+        margin: 0;
+        max-width: 180px;
+    }
+    .tab-content .tab-pane {
+        padding: 20px 0;
+    }
+    #navigation .navi a {
+        #navigation .navi a {
+            font-size: 14px;
+            padding: 20px;
+            text-align: center;
+        }
+        #navigation .navi i {
+            margin-right: 0px;
+        }
+        #navigation .navi .active a {
+            background: #122143 none repeat scroll 0 0;
+            border-left: none;
+            display: block;
+            padding-left: 20px;
+        }
+        header .header-top img {
+            max-width: 38px !important;
+        }
+        .v-align header {
+            padding: 12px 15px;
+        }
+        header .header-top li {
+            padding-left: 13px;
+            padding-right: 6px;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: rgba(0, 0, 0, 0);
+        }
+        .navbar-header .navbar-toggle {
+            float: left;
+            margin: 0;
+            padding: 0;
+            top: 12px;
+        }
+        button,
+            html [type="button"],
+            [type="reset"],
+            [type="submit"] {
+                outline: medium none;
+        }
+        .user-dashboard .sales h2 {
+            color: #8492af;
+            float: left;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+            padding: 13px 0 0;
+    }
+        .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle > span {
+            font-size: 11px;
+        }
+        .user-dashboard .sales button {
+            font-size: 11px;
+            padding-right: 23px;
+    }  
+        .user-dashboard .sales h2 {
+        font-size: 12px;
+    }
+    .gutter{
+        padding: 0;
+    }
+    }
+    @media only screen and (max-device-width: 992px) {
+        header .header-top li {
+            padding-left: 20px !important;
+            padding-right: 0;
+    }
+        header .logo img {
+            max-width: 125px !important;
+    }
+    
+    }
+    
+    @media only screen and (min-device-width: 767px) and (max-device-width: 998px){
+          .user-dashboard .header-top {
+            padding-top: 5px;
+    }
+        .user-dashboard .header-rightside {
+            display: inline-block;
+            float: left;
+            width: 100%;
+    }
+        .user-dashboard .header-rightside .header-top img {
+            max-width: 41px !important;
+    } 
+        .user-dashboard .sales button {
+            font-size: 10px;
+        }
+            .user-dashboard .btn.btn-secondary.btn-lg.dropdown-toggle > span {
+            font-size: 12px;
+        }
+            .user-dashboard .sales h2 {
+            font-size: 15px;
+        }
+        }
+        @media only screen and (min-device-width:998px) and (max-device-width: 1350px){
+            #navigation .logo img {
+        max-width: 130px;
+        padding: 16px 0 17px;
+        width: 100%;
+    }
+    }        
+}
+} 
+
+
+
+</style>
+
+</body>
